@@ -1,0 +1,36 @@
+<!-- <button (click)="mesesTrimestre(1)">Trimestre 1</button>
+<button (click)="mesesTrimestre(2)">Trimestre 2</button>
+<button (click)="mesesTrimestre(3)">Trimestre 3</button>
+<button (click)="mesesTrimestre(4)">Trimestre 4</button> -->
+ <br> <br>
+
+<button (click)="exibirDadosTrimestre(1)">Trimestre 1</button>
+<button (click)="exibirDadosTrimestre(2)">Trimestre 2</button>
+<button (click)="exibirDadosTrimestre(3)">Trimestre 3</button>
+<button (click)="exibirDadosTrimestre(4)">Trimestre 4</button>
+
+<div *ngIf="trimestreSelecionado !== null">
+  <h3>{{ mesSelecionado ? 'Dados do mês' : 'Dados do trimestre' }}</h3>
+  <ul *ngIf="!mesSelecionado">
+    <li *ngFor="let dado of dadosDoTrimestre">{{ dado.anoMes }}</li>
+  </ul>
+  <ul *ngIf="mesSelecionado">
+    <li *ngFor="let dado of dadosDoMes">{{ dado.horasTrabalhadas }}</li>
+  </ul>
+</div>
+
+
+
+  <!-- <div *ngIf="dadosDoMes">
+    <h3>Mes : {{ mesSelecionado }}</h3>
+    <ul>
+      <li *ngFor="let dado of dadosDoMes">{{ dado. horasTrabalhadas }}</li>
+    </ul>
+    -->
+
+
+<div class="meses-container" *ngIf="trimestreSelecionado !== null">
+    <div class="meses-buttons">
+      <button *ngFor="let mes of meses[trimestreSelecionado - 1]" (click)="exibirDadosMes('202401')" >{{ mes.abreviado }}</button>
+    </div>
+  </div>

@@ -1,0 +1,41 @@
+/* tabela.component.scss */
+
+.tabelas-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tabela {
+    border-collapse: collapse;
+    width: 45%; /* Define a largura da tabela */
+  }
+  
+  .tabela caption {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .tabela th {
+    background-color: #f2f2f2; /* Cor de fundo do cabeçalho */
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd; /* Borda */
+  }
+  
+  .tabela td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd; /* Borda */
+  }
+  
+  /* Estilo para a primeira linha das tabelas */
+  .tabela tr:first-child th {
+    background-color: #ddd; /* Cor de fundo da primeira linha */
+  }
+  
+  /* Estilo para a última linha das tabelas */
+  .tabela tr:last-child td {
+    border-bottom: 2px solid #000; /* Borda inferior mais grossa */
+  }
+  
