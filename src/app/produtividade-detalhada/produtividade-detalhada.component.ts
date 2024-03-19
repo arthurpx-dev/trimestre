@@ -7,7 +7,8 @@ import { DadosService } from '../dados.service';
   styleUrl: './produtividade-detalhada.component.scss'
 })
 export class ProdutividadeDetalhadaComponent {
-  @Input() mostrarTabela: boolean = false;
+  @Input() valor: number | undefined;
+  @Input() titulo: String | undefined;
   
   
 }

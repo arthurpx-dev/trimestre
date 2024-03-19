@@ -7,11 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
  
-  mostrarTabela: boolean = false;
-
-  // Método para lidar com a mudança do status da tabela
-  onMostrarTabelaChanged(event: boolean) {
-    this.mostrarTabela = event;
-  }
   
 }

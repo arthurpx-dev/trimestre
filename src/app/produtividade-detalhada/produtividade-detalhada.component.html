@@ -1,44 +1,4 @@
-<!-- tabela.component.html
+<div>
+  <h2>{{titulo}}</h2>{{ valor }}
+</div>
 
-<div class="tabelas-container"  *ngIf="mostrarTabela">
-    
-    <table class="tabela">
-      <caption>Dados Gerais</caption>
-      <tr>
-        <th>Descrição</th>
-        <th>Valor</th>
-      </tr>
-      <tr>
-        <td>Horas Trabalhadas</td>
-        <td>{{ horasTrabalhadas }}</td>
-      </tr>
-      <tr>
-        <td>Dias Trabalhados</td>
-        <td>{{ diasTrabalhados }}</td>
-      </tr>
-      <tr>
-        <td>Dias de Folga</td>
-        <td>{{ diasFolga }}</td>
-      </tr>
-    </table>
-  
-    
-    <table class="tabela">
-      <caption>Dados de Sistema</caption>
-      <tr>
-        <th>Sistema</th>
-        <th>Documentos Assinados</th>
-        <th>Documentos Enviados</th>
-        <th>Métrica</th>
-        <th>Resultado (%)</th>
-      </tr>
-      <tr *ngFor="let sistema of sistemas">
-        <td>{{ sistema.nome }}</td>
-        <td>{{ sistema.documentosAssinados }}</td>
-        <td>{{ sistema.documentosEnviados }}</td>
-        <td>{{ sistema.metrica }}</td>
-        <td>{{ sistema.resultado }}</td>
-      </tr>
-    </table>
-  </div>
-   -->
